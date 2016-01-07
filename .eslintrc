@@ -1,8 +1,25 @@
 {
   "parser": "babel-eslint",
   "extends": "eslint:recommended" ,
-  "plugins": ["react"],
+  "plugins": [
+    "react",
+    "mocha",
+    "sinon"
+  ],
   "ecmaFeatures": {
     "jsx": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true,
+    "jquery": true
+  },
+  "globals": {
+    "sinon": true,
+    "expect": true
+  },
+  "rules": {
+    "sinon/no-fakes": 2
   }
 }
